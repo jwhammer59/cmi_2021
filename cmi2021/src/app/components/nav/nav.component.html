@@ -1,1 +1,18 @@
-<p-menubar [model]="items"></p-menubar>
+<div id="main">
+  <div class="p-d-flex p-flex-column p-flex-md-row p-jc-around">
+    <div class="p-d-flex p-ai-center">
+      <div>
+        <div><img src="assets/cmi_logo.png" /></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <p id="site-title">Custom Machine, Inc.</p>
+      </div>
+    </div>
+    <div></div>
+  </div>
+</div>
+<p-menubar [model]="items">
+  <ng-template pTemplate="start"> </ng-template>
+</p-menubar>

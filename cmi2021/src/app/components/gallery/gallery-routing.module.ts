@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: GalleryComponent },
+  { path: '**', component: PageNotFoundComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class GalleryRoutingModule { }
+export class GalleryRoutingModule {}

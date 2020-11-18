@@ -15,34 +15,64 @@ export class NavComponent implements OnInit {
       {
         label: 'Home',
         icon: 'pi pi-fw pi-home',
+        routerLink: '/',
       },
       {
         label: 'Machinery',
         icon: 'pi pi-fw pi-cog',
+        routerLink: '/machinery',
       },
       {
         label: 'About Us',
         icon: 'pi pi-fw pi-users',
+        routerLink: '/about',
       },
       {
         label: 'Services',
         icon: 'pi pi-fw pi-list',
         items: [
-          { label: 'Milling & Turning', icon: 'pi pi-fw pi-refresh' },
-          { label: 'Engineering Support', icon: 'pi pi-fw pi-refresh' },
+          {
+            label: 'All Services',
+            icon: 'pi pi-fw pi-list',
+            routerLink: '/services',
+          },
+          {
+            label: 'Milling & Turning',
+            icon: 'pi pi-fw pi-cog',
+            routerLink: '/services/machining',
+          },
+          {
+            label: 'Engineering Support',
+            icon: 'pi pi-fw pi-user-edit',
+            routerLink: '/services/engineering',
+          },
           { separator: true },
-          { label: 'Spray Machines', icon: 'pi pi-fw pi-refresh' },
-          { label: '60 Station', icon: 'pi pi-fw pi-refresh' },
-          { label: 'Pallet Indexing', icon: 'pi pi-fw pi-refresh' },
+          {
+            label: 'Spray Machines',
+            icon: '',
+            routerLink: '/spray',
+          },
+          {
+            label: '60 Station',
+            icon: '',
+            routerLink: '/spray/sixty',
+          },
+          {
+            label: 'Pallet Indexing',
+            icon: '',
+            routerLink: '/spray/pallet',
+          },
         ],
       },
       {
         label: 'Gallery',
         icon: 'pi pi-fw pi-camera',
+        routerLink: '/gallery',
       },
       {
         label: 'Contact Us',
         icon: 'pi pi-fw pi-envelope',
+        routerLink: '/contact-us',
       },
     ];
   }
