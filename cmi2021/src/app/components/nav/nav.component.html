@@ -1,7 +1,7 @@
 <div id="main">
-  <div class="p-d-flex p-flex-column p-flex-md-row p-jc-around">
+  <div class="p-d-flex p-flex-column p-flex-sm-row p-jc-around">
     <div class="p-d-flex p-ai-center">
-      <div>
+      <div id="logo">
         <div><img src="assets/cmi_logo.png" /></div>
       </div>
     </div>
@@ -13,6 +13,8 @@
     <div></div>
   </div>
 </div>
-<p-menubar [model]="items">
-  <ng-template pTemplate="start"> </ng-template>
-</p-menubar>
+<div class="p-shadow-10">
+  <p-menubar [model]="items">
+    <ng-template pTemplate="start"> </ng-template>
+  </p-menubar>
+</div>
