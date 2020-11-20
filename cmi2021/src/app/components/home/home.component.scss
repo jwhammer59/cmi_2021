@@ -1,13 +1,143 @@
-#video-header {
+#videoDiv {
+  width: 95%;
+  // max-width: 1200px;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+#video {
   width: 100%;
-  height: 100%;
+  height: auto;
+  // background-color: black;
   opacity: 0.4;
 }
 
-.content {
-  margin: auto;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+#videoMessage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 20px;
+  height: 100%;
+}
+
+#videoMessage {
+  padding: 0.4rem;
+  text-shadow: 2px 2px 2px #000000;
+  color: #ffffff;
+  z-index: 99;
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #videoMessage {
+    margin-top: 50px;
+  }
+
+  #videoMessage h1 {
+    font-size: 1rem;
+  }
+
+  #videoMessage h3 {
+    font-size: 0.7rem;
+    width: 80%;
+  }
+
+  #videoMessage h4 {
+    font-size: 0.5rem;
+    width: 80%;
+  }
+
+  .p-button {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #videoMessage {
+    margin-top: 75px;
+  }
+
+  #videoMessage h1 {
+    font-size: 1.3rem;
+  }
+
+  #videoMessage h3 {
+    font-size: 1rem;
+    width: 75%;
+  }
+
+  #videoMessage h4 {
+    font-size: 0.8rem;
+    width: 75%;
+  }
+}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #videoMessage {
+    margin-top: 100px;
+  }
+
+  #videoMessage h1 {
+    font-size: 1.5rem;
+  }
+
+  #videoMessage h3 {
+    font-size: 1.1rem;
+    width: 70%;
+  }
+
+  #videoMessage h4 {
+    font-size: 0.9rem;
+    width: 70%;
+  }
+}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #videoMessage {
+    margin-top: 150px;
+  }
+
+  #videoMessage h1 {
+    font-size: 1.7rem;
+  }
+
+  #videoMessage h3 {
+    font-size: 1.3rem;
+    width: 65%;
+  }
+
+  #videoMessage h4 {
+    font-size: 1.1rem;
+    width: 65%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #videoMessage {
+    margin-top: 200px;
+  }
+
+  #videoMessage h1 {
+    font-size: 2rem;
+  }
+
+  #videoMessage h3 {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+
+  #videoMessage h4 {
+    font-size: 1.2rem;
+    width: 60%;
+  }
 }
